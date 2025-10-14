@@ -79,6 +79,15 @@
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_900_RX"
             },
+            "500": {
+                "product_name": "BAYCKRC 900MHz Nano Pro RX",
+                "lua_name": "BKRC 900 NanoPro",
+                "layout_file": "Generic 900 PA.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.3.1",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_900_RX"
+            },
             "dual-core": {
                 "product_name": "BAYCKRC 900MHz Dual Core RX",
                 "lua_name": "BK 900 Dual RX",
@@ -95,6 +104,15 @@
                 "lua_name": "BK 2G4 Nano RX",
                 "layout_file":  "Generic 2400 PA.json",
                 "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.3.1",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_2400_RX"
+            },
+            "pwm5": {
+                "product_name": "BAYCKRC 2.4Ghz 5xPWM RX",
+                "lua_name": "BKRC 5PWM 2G4 RX",
+                "layout_file": "Generic 2400 PWMP5.json",
+                "upload_methods": ["uart", "wifi"],
                 "min_version": "3.3.1",
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_2400_RX"
