@@ -108,6 +108,15 @@
                 "platform": "esp8285",
                 "firmware": "Unified_ESP8285_2400_RX"
             },
+            "xmnano": {
+                "product_name": "XM 2.4GHz Nano RX",
+                "lua_name": "XM 2G4 Nano RX",
+                "layout_file":  "Generic 2400 PA.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.3.1",
+                "platform": "esp8285",
+                "firmware": "Unified_ESP8285_2400_RX"
+            },
             "pwm5": {
                 "product_name": "BAYCKRC 2.4Ghz 5xPWM RX",
                 "lua_name": "BKRC 5PWM 2G4 RX",
@@ -199,6 +208,33 @@
                 "platform": "esp32",
                 "firmware": "Unified_ESP32_LR1121_TX"
             },
+            "OLED NANO": {
+                "product_name": "BAYCKRC 900/2400 Dual Band 2W OLED TX",
+                "lua_name": "B9002G4 OLEDTX",
+                "layout_file": "BAYCKRC Dual Band.json",
+                "overlay": {
+                        "power_min": 2,
+                        "power_high": 7,
+                        "power_max": 7,
+                        "power_default": 3,
+                        "power_control": 0,
+                        "power_values": [-12,-9,-6,-3,0,5],
+                        "power_values_dual": [-16,-12,-7,-4,1,5],
+                        "radio_rfsw_ctrl": [31,0,20,8,8,18,0,5],
+                        "joystick": 35,
+                        "joystick_values": [3276,2072,1377,2730,0,4095],
+                        "led_rgb": 12,
+                        "led_rgb_isgrb": true,
+                        "screen_sck": 19,
+                        "screen_sda": 22,
+                        "screen_type": 1,
+                        "screen_reversed": 1
+                },
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.5.4",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_LR1121_TX"
+            },
             "nano_gemini": {
                 "product_name": "BAYCKRC 900/2400 Dual Band 1W Nano Gemini TX",
                 "lua_name": "B 9002G4 NanoGTX",
@@ -242,9 +278,31 @@
                 "platform": "esp32",
                 "firmware": "Unified_ESP32_LR1121_RX"
             },
+            "dual_xm": {
+                "product_name": "XM 900/2400 Dual Band Gemini RX",
+                "lua_name": "XM 900/2400 GRx",
+                "layout_file": "Generic LR1121 True Diversity.json",
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.4.0",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_LR1121_RX"
+            },
             "dualc3": {
                 "product_name": "BAYCKRC C3 900/2400 Dual Band 100mW Gemini RX",
                 "lua_name": "BK DB 100 GRX",
+                "layout_file": "Generic C3 LR1121 True Diversity.json",
+                "overlay": {
+                    "power_values_dual": [-12,-9,-6,-2],
+                    "radio_rfsw_ctrl": [31,0,4,8,8,18,0,17]
+                },
+                "upload_methods": ["uart", "wifi", "betaflight"],
+                "min_version": "3.5.0",
+                "platform": "esp32-c3",
+                "firmware": "Unified_ESP32C3_LR1121_RX"
+            },
+            "dualc3_xm": {
+                "product_name": "XM C3 900/2400 Dual Band 100mW Gemini RX",
+                "lua_name": "XM C3 DB 100 GRX",
                 "layout_file": "Generic C3 LR1121 True Diversity.json",
                 "overlay": {
                     "power_values_dual": [-12,-9,-6,-2],
