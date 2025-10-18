@@ -2111,41 +2111,15 @@
                 "platform": "esp32",
                 "firmware": "Unified_ESP32_2400_RX"
             }
-        }
-    },
-    "tx_dual":{
-        "int DB TX": {
-            "product_name": "HelloRadio 900/2.4 int Dual Band TX",
-            "lua_name": "HR DB TX",
-            "layout_file": "BAYCKRC Dual Band.json",
-            "overlay": {
-            "serial_rx": 3,
-            "serial_tx": 1,
-            "power_min": 2,
-            "power_high": 6,
-            "power_max": 6,
-            "power_default": 3,
-            "power_control": 0,
-            "power_values": [-16,-12,-8,-5,0],
-            "power_values_dual": [-16,-12,-8,-5,3],
-            "radio_rfsw_ctrl": [31,0,20,12,12,18,0,17]
-            },
-            "upload_methods": ["uart", "wifi"],
-            "min_version": "3.5.4",
-            "platform": "esp32",
-            "firmware": "Unified_ESP32_LR1121_TX"
         },
-        "int DB GTX": {
-            "product_name": "HelloRadio 900/2.4 int Dual Band GTX",
-            "lua_name": "HR DB GTX",
-            "layout_file": "BAYCKRC Dual Band.json",
-            "overlay": {
+        "tx_dual":{
+            "int DB TX": {
+                "product_name": "HelloRadio 900/2.4 int Dual Band TX",
+                "lua_name": "HR DB TX",
+                "layout_file": "BAYCKRC Dual Band.json",
+                "overlay": {
                 "serial_rx": 3,
                 "serial_tx": 1,
-                "radio_busy_2": 39,
-                "radio_dio1_2": 34,
-                "radio_nss_2": 15,
-                "radio_rst_2": 21,
                 "power_min": 2,
                 "power_high": 6,
                 "power_max": 6,
@@ -2154,11 +2128,37 @@
                 "power_values": [-16,-12,-8,-5,0],
                 "power_values_dual": [-16,-12,-8,-5,3],
                 "radio_rfsw_ctrl": [31,0,20,12,12,18,0,17]
+                },
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.5.4",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_LR1121_TX"
             },
-            "upload_methods": ["uart", "wifi"],
-            "min_version": "3.5.4",
-            "platform": "esp32",
-            "firmware": "Unified_ESP32_LR1121_TX"
+            "int DB GTX": {
+                "product_name": "HelloRadio 900/2.4 int Dual Band GTX",
+                "lua_name": "HR DB GTX",
+                "layout_file": "BAYCKRC Dual Band.json",
+                "overlay": {
+                    "serial_rx": 3,
+                    "serial_tx": 1,
+                    "radio_busy_2": 39,
+                    "radio_dio1_2": 34,
+                    "radio_nss_2": 15,
+                    "radio_rst_2": 21,
+                    "power_min": 2,
+                    "power_high": 6,
+                    "power_max": 6,
+                    "power_default": 3,
+                    "power_control": 0,
+                    "power_values": [-16,-12,-8,-5,0],
+                    "power_values_dual": [-16,-12,-8,-5,3],
+                    "radio_rfsw_ctrl": [31,0,20,12,12,18,0,17]
+                },
+                "upload_methods": ["uart", "wifi"],
+                "min_version": "3.5.4",
+                "platform": "esp32",
+                "firmware": "Unified_ESP32_LR1121_TX"
+            }
         }
     },
     "hglrc": {
