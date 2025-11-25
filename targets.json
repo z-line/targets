@@ -2504,8 +2504,8 @@
                 "lua_name": "iF GemX C14 TX S",
                 "layout_file": "iFlight ELRS Commando 14 GemX.json",
                 "overlay": {
-                    "serial_rx": 17,
-                    "serial_tx": 17
+                    "serial_rx": 3,
+                    "serial_tx": 3
                 },
                 "upload_methods": ["uart", "wifi"],
                 "min_version": "3.5.4",
