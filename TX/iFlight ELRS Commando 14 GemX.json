@@ -20,12 +20,12 @@
     "radio_dcdc": true,
 
     "power_min": 2,
-    "power_high": 7,
-    "power_max": 7,
+    "power_high": 6,
+    "power_max": 6,
     "power_default": 2,
     "power_control": 0,
-    "power_values": [-16,-12,-8,-5,0,3],
-    "power_values_dual": [-17,-14,-9,-6,1,1],
+    "power_values": [-15,-11,-7,-4,0],
+    "power_values_dual": [-17,-14,-9,-6,1],
 
     "use_backpack": true,
     "debug_backpack_baud": 460800,
@@ -33,8 +33,7 @@
     "debug_backpack_tx": 5,
     "backpack_boot": 23,
     "backpack_en": 14,
-    "passthrough_baud": 230400,
-
+    
     "screen_cs": 12,
     "screen_dc": 2,
     "screen_mosi": 22,
